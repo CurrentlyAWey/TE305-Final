@@ -21,7 +21,7 @@
 /* @end */
 
 /* @group Single Chosen */
-/*
+
 .chzn-container-single .chzn-single {
   background-color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0 );   
@@ -53,8 +53,6 @@
 .chzn-container-single .chzn-default {
   color: #999;
 }
-*/
-
 
 
 .chzn-container-single .chzn-single abbr:hover {
