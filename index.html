@@ -14,11 +14,6 @@
 
     <script id="song-template" type="text/template">
       <div class="adiv" style="background-image: url(<%= bigIcon %>)">
-          <div class="buttons">
-                <button title='Skip this song' class='btn btn-inverse bypass '>Bypass</button>
-                <img class='playbutton play' src='images/play.png'>
-                <img class='playbutton pause' src='images/pause.png'>
-          </div>          
 <!--
          <div class="song-info">
             <div class="title album-label"><%= name %></div>
@@ -52,19 +47,12 @@
   </div>
 </div>
 
+<!--
 <div id="all-info">
     <div class="container">
         <div  class="span12 ">
             <div>
                 <div id="info" class=""> </div>
-                  <div id="audio-buttons" class="btn-group pull-right">
-                        <button id="rp-play-prev" class="btn btn-primary btn-small">
-                            <i class="icon-backward"></i></button>
-                        <button id="rp-pause-play" class="btn btn-primary btn-small">
-                            <i class="icon-play"></i></button>
-                        <button id="rp-play-next" class="btn btn-primary btn-small">
-                            <i class="icon-forward"></i></button>
-                  </div>
                 <div id="song-main">
                     <div id='song-list'> </div>
                     <br style="clear:left;"/>
@@ -72,7 +60,8 @@
             </div>
         </div>
     </div>
-  </div>
+</div>
+-->
 
 
 <br clear="both">
@@ -87,7 +76,22 @@
 
 <script type="text/javascript">
 
-jQuery.ajaxSettings.traditional = true; 
+jQ<div id="all-info">
+    <div class="container">
+        <div  class="span12 ">
+            <div>
+                <div id="info" class=""> </div>
+                <div id="song-main">
+                    <div id='song-list'> </div>
+                    <br style="clear:left;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+uery.ajaxSettings.traditional = true; 
 var host = 'http://developer.echonest.com/api/v4/';
 var apiKey =  'YTBBANYZHICTAFW2P';
 var curSong = null;
