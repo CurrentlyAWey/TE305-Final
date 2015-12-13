@@ -53,19 +53,23 @@
     padding:10px;
 }
 
+.tadiv {
+    width:294px;
+    height:294px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    position:relative;
+    background-color: #124;
+    margin-bottom:0px;
+    display:inline-block;
+    padding:10px;
+}
+
 #go {
     position:relative;
     left: 6px;
     top: -3px;
-}
-
-.tadiv {
-    display:inline-block;
-    width:294px;
-    height:294px;
-    position:relative;
-    background-color: #124;
-    padding:3px;
 }
 
 .toadiv {
@@ -83,7 +87,7 @@
 }
 
 .adiv:hover {
-    /*background-color:#4bc313;*/
+    background-color:#4bc313;
 }
 
 #info {
@@ -92,17 +96,6 @@
     text-align:right;
 }
 
-
-.song-info {
-    position:absolute;
-    bottom: 4px;
-    margin-left:6px;
-    margin-right:6px;
-    line-height:18px;
-    font-size:14px;
-    height:40px;
-    overflow:hidden;
-}
 
 .playbutton {
     width:100px;
@@ -131,6 +124,7 @@
     white-space:nowrap;
 }
 
+/*
 .change {
     float:left;
 }       
@@ -138,28 +132,11 @@
 .bypass {
     float:right;
 }       
+*/
 
 #search {
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.faq {
-    margin-right:10px;
-}
-
-#frog-image {
-    margin-right:15px;
-    margin-top:5px;
-    float:left;
-    border-radius:15px;
-
-}
-
-#lz-graph {
-    float:right;
-    border-radius:15px;
-    margin-left:10px;
 }
 
 #all-info {
@@ -169,8 +146,3 @@
     margin-right:20px;
     margin-top:10px;
 }
-
-#save-button  {
-    margin-right:10px;
-}
-
