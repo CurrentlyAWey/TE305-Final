@@ -298,6 +298,18 @@ $(document).ready(function(){
     $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/linkinpark?count=1", function(response){
 	console.log(response);
     });
+    $.ajaxSetup( {cache: true});
+    $(".chzn-select").chosen();
+    player = getSpotifyPlayer();
+    player.setCallback(function(song) {
+        console.log('cur song is', song);
+        var oldSong = curSong;
+        curSong = song;
+        songChanged(oldSong);
+        songChanged(curSong);
+    });
+    initUI();
+    loadGenreList();
 });
     </script>
 
