@@ -294,7 +294,7 @@ function processParams() {
     showGenre(genre);
 }
 
-$(.document).ready(function(){
+$.document).ready(function(){
     $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=1", function(response){
 	console.log(response);
     });
