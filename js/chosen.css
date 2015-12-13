@@ -56,30 +56,7 @@
 */
 
 
-
 /*
-.chzn-container-single .chzn-single span {
-  margin-right: 26px;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-}
-*/
-
-
-.chzn-container-single .chzn-single abbr {
-  display: block;
-  position: absolute;
-  right: 26px;
-  top: 6px;
-  width: 12px;
-  height: 13px;
-  font-size: 1px;
-  background: url('chosen-sprite.png') right top no-repeat;
-}
 .chzn-container-single .chzn-single abbr:hover {
   background-position: right -11px;
 }
@@ -129,12 +106,19 @@
   -webkit-background-clip: padding-box;
   background-clip        : padding-box;
 }
+*/
+
+
 /* @end */
 
+
+/*
 .chzn-container-single-nosearch .chzn-search input {
   position: absolute;
   left: -9000px;
 }
+*/
+
 
 /* @group Multi Chosen */
 
@@ -158,7 +142,7 @@
 
 */
 
-
+/*
 .chzn-container-multi .chzn-choices li {
   float: left;
   list-style: none;
@@ -242,6 +226,9 @@
 .chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
   background-position: right -11px;
 }
+*/
+
+
 /* @end */
 
 /* @group Results */
