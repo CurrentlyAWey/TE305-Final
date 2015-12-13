@@ -24,7 +24,6 @@
     color:#222;
 }
 
-
 #main {
 }
 
@@ -73,13 +72,6 @@
 .adiv:hover {
     background-color:#4bc313;
 }
-
-#info {
-    height:24px;
-    width:100%;
-    text-align:right;
-}
-
 
 .playbutton {
     width:100px;
