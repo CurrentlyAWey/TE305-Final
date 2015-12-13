@@ -205,19 +205,6 @@
     margin-top:10px;
 }
 
-#tweet-div {
-    width:100px;
-    height:12px;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
-}
-
-.twitter-follow-button {
-    height:20px;
-    margin-left:-12px;
-}
-
 #save-button  {
     margin-right:10px;
 }
