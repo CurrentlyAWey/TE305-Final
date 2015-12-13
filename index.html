@@ -19,12 +19,6 @@
                 <img class='playbutton play' src='images/play.png'>
                 <img class='playbutton pause' src='images/pause.png'>
           </div>          
-<!--
-         <div class="song-info">
-            <div class="title album-label"><%= name %></div>
-            <div class="artist album-label"><%= artist %></div>
-         </div>
--->
       </div>
     </script>
   </head>
@@ -55,22 +49,9 @@
 <div id="all-info">
     <div class="container">
         <div  class="span12 ">
-            <div>
-<!--
-                <div id="info" class=""> </div>
-                  <div id="audio-buttons" class="btn-group pull-right">
-                        <button id="rp-play-prev" class="btn btn-primary btn-small">
-                            <i class="icon-backward"></i></button>
-                        <button id="rp-pause-play" class="btn btn-primary btn-small">
-                            <i class="icon-play"></i></button>
-                        <button id="rp-play-next" class="btn btn-primary btn-small">
-                            <i class="icon-forward"></i></button>
-                  </div>
--->
-                <div id="song-main">
-                    <div id='song-list'> </div>
-                    <br style="clear:left;"/>
-                </div>
+            <div id="song-main">
+                <div id='song-list'> </div>
+                <br style="clear:left;"/>
             </div>
         </div>
     </div>
@@ -119,7 +100,6 @@ function initUI() {
         loadTopSongs(curGenre, 'emerging-best');
     });
 
-    $("#save-button").click(savePlaylist);
     $("#choose-random").click(chooseRandomGenre);
 }
 
