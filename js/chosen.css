@@ -83,6 +83,9 @@
   margin: 0;
   white-space: nowrap;
   z-index: 1010;
+*/
+
+
 }
 .chzn-container-single .chzn-search input {
   background: #fff url('chosen-sprite.png') no-repeat 100% -22px;
@@ -106,7 +109,6 @@
   -webkit-background-clip: padding-box;
   background-clip        : padding-box;
 }
-*/
 
 
 /* @end */
@@ -210,6 +212,7 @@
 .chzn-container-multi .chzn-choices .search-choice-focus {
   background: #d4d4d4;
 }
+
 .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
   display: block;
   position: absolute;
