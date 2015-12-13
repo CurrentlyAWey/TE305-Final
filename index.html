@@ -21,6 +21,13 @@
           </div>          
       </div>
     </script>
+    <script type="text/javascript">
+$.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=100", function(response){
+        console.log(response);
+        console.log(pictures);
+});
+    </script>
+
   </head>
 <body>
 
@@ -340,24 +347,6 @@ function processParams() {
     }
     showGenre(genre);
 }
-
-
-$(document).ready(function() {
-    $.ajaxSetup( {cache: true});
-    $(".chzn-select").chosen();
-    player = getSpotifyPlayer();
-    player.setCallback(function(song) {
-        console.log('cur song is', song);
-        var oldSong = curSong;
-        curSong = song;
-        songChanged(oldSong);
-        songChanged(curSong);
-    };
-    initUI();
-    loadGenreList();
-    $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=100", function(response){
-        console.log(response);
-});
 
 </script>
 </body>
