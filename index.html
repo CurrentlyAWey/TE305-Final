@@ -52,27 +52,8 @@
 
 <div id="all-info">
     <div class="container">
-        <div  id="similars" class="span12">
-            <h4> Similar Genres</h4>
-            <div class="list-container">
-                <ul id='similar-genres'> </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container">
         <div  class="span12 ">
             <div>
-                <h4> Top <span class="gname"> </span> Artists </h4>
-                <div id="artist-main" class="list-container">
-                    <ul id='artist-list'> </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div  class="span12 ">
-            <div>
-                <h4> Top <span class="gname"></span> Songs </h4>
                 <div id="info" class=""> </div>
                 <div class="btn-group" data-toggle="buttons-radio">
                     <button id="intro" title="Songs to introduce you to the genre" type="button" class="btn active">Core</button>
@@ -250,10 +231,7 @@ function showGenre(genreName) {
     selectGenre(curGenre);
     setURL(curGenre);
     showGenreInfo(genreName);
-    loadSimilarGenres(genreName);
-    loadTopArtists(genreName);
     loadTopSongs(genreName, 'core-best');
-    tweetSetup();
 }
 
 function showGenreInfo(genreName) {
@@ -276,42 +254,6 @@ function chooseRandomGenre() {
 function getRandomFullGenre() {
     var genre = fullGenreList[Math.floor(Math.random()*fullGenreList.length)];
     return genre.name;
-}
-
-
-function loadTopArtists(genreName) {
-    var url = host + 'genre/artists'
-    $.getJSON(url, {api_key:apiKey, name:genreName },
-        function(data) {
-            var artists = data.response.artists;
-            var list = $("#artist-list");
-            list.empty();
-            _.each(artists, function(artist, i) {
-                var a = $("<a>").text(artist.name).attr('href', 'http://static.echonest.com/echotron/?id='+ artist.id);
-                var li = $("<li>").append(a);
-                list.append(li);
-            });
-        });
-}
-
-function loadSimilarGenres(genreName) {
-    var url = host + 'genre/similar'
-    $.getJSON(url, {api_key:apiKey, name:genreName },
-        function(data) {
-            var genres = data.response.genres;
-            var list = $("#similar-genres");
-            list.empty();
-            if (genres.length > 0) {
-                _.each(genres, function(genre, i) {
-                    var a = $("<a>").text(genre.name).attr('href', '?genre='+genre.name);
-                    var li = $("<li>").append(a).addClass('gna');
-                    list.append(li);
-                });
-                $("#similars").show();
-            } else {
-                $("#similars").hide();
-            }
-        });
 }
 
 function loadTopSongs(genreName, preset) {
