@@ -355,10 +355,8 @@ $(document).ready(function() {
     };
     initUI();
     loadGenreList();
-    $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=100", function(response)
-    {
+    $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=100", function(response){
         console.log(response);
-        console.log(pictures);
 });
 
 </script>
