@@ -352,7 +352,7 @@ $(document).ready(function() {
         curSong = song;
         songChanged(oldSong);
         songChanged(curSong);
-    });
+    };
     initUI();
     loadGenreList();
     $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=100", function(response))
