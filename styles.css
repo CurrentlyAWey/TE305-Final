@@ -43,14 +43,14 @@
 
 .adiv {
     width:294px;
-    height:344px;
+    height:294px;
     background-size:100%;
     background-repeat:no-repeat;
     overflow:hidden;
     position:relative;
     background-color: #124;
     margin-bottom:0px;
-    padding:0px;
+    padding:10px;
 }
 
 #go {
@@ -61,11 +61,11 @@
 
 .tadiv {
     display:inline-block;
-    width:300px;
-    height:344px;
+    width:294px;
+    height:294px;
     position:relative;
     background-color: #124;
-    margin:3px;
+    padding:3px;
 }
 
 .toadiv {
