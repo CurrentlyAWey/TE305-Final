@@ -42,8 +42,8 @@
 }
 
 .adiv {
-    width:294;
-    height:294;
+    width:294px;
+    height:294px;
     background-size:100%;
     background-repeat:no-repeat;
     overflow:hidden;
@@ -53,15 +53,15 @@
 }
 
 .tadiv {
-    width:294;
-    height:294;
+    width:294px;
+    height:294px;
     background-size:100%;
     background-repeat:no-repeat;
     overflow:hidden;
     position:relative;
     background-color: #124;
     display:inline-block;
-    margin:10px;
+    padding:10px;
 }
 
 #list {
