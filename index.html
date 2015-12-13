@@ -21,7 +21,6 @@
           </div>          
       </div>
     </script>
-    <script type="text/javascript">
 <script type="text/javascript">
 
 jQuery.ajaxSettings.traditional = true; 
@@ -295,11 +294,10 @@ function processParams() {
     showGenre(genre);
 }
 
-</script>
-
-
-$.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=1", function(response){
-        console.log(response);
+$(.document).ready(function(){
+    $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=1", function(response){
+	console.log(response);
+    });
 });
     </script>
 
