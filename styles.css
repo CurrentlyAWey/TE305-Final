@@ -2,10 +2,6 @@
     display:none;
 }
 
-#about {
-    display:none;
-}
-
 #save {
     position:relative;
     display:none;
@@ -108,7 +104,7 @@
 
 .is-current {
     /*background-color:#e36b23;*/
-    background-color:#236be3;
+    background-color:yellow;
     font-size:18px;
 }
 
