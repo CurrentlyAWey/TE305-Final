@@ -42,17 +42,19 @@
 }
 
 .adiv {
-    width:100%;
-    height:100%;
+    width:294;
+    height:294;
     background-size:100%;
     background-repeat:no-repeat;
     overflow:hidden;
     position:relative;
     background-color: #124;
+    margin:10px
 }
 
 .tadiv {
-    width:25%;
+    width:294;
+    height:294;
     background-size:100%;
     background-repeat:no-repeat;
     overflow:hidden;
