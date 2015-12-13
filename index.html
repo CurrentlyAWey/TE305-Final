@@ -22,59 +22,6 @@
       </div>
     </script>
     <script type="text/javascript">
-$.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=100", function(response){
-        console.log(response);
-        console.log(pictures);
-});
-    </script>
-
-  </head>
-<body>
-
-<div id="wrap" class="navbar navbare">
-  <div class="navbar-inner">
-    <div class="container">
-        <a id='show-search' class="brand">Search</a>
-
-        <ul class="nav">
-              <li> 
-                <span id='genre-span'>
-                  <select id='genre' data-placeholder="Choose a genre" 
-                        class="chzn-select" style="width:220px;" tabindex="2">
-                    <option value=""></option> 
-                  </select>
-                </span>
-              </li>
-              <li> <button id="choose-random" class="btn btn-small btn-random">
-                        <i class="icon-random"></i></button>
-              </li>
-        </ul>
-    </div>
-  </div>
-</div>
-
-<div id="all-info">
-    <div class="container">
-        <div  class="span12 ">
-            <div id="song-main">
-                <div id='song-list'> </div>
-                <br style="clear:left;"/>
-            </div>
-        </div>
-    </div>
-  </div>
-
-
-<br clear="both">
-<div id="the-footer" class="">
-  <div>
-    <small>
-    Powered by <a href="http://echonest.com">The Echo Nest</a> and <a href="http://spotify.com">Spotify</a>. 
-    </small>
-  </div>
-</div>
-
-
 <script type="text/javascript">
 
 jQuery.ajaxSettings.traditional = true; 
@@ -349,5 +296,59 @@ function processParams() {
 }
 
 </script>
+
+
+$.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/nyc?count=1", function(response){
+        console.log(response);
+});
+    </script>
+
+  </head>
+<body>
+
+<div id="wrap" class="navbar navbare">
+  <div class="navbar-inner">
+    <div class="container">
+        <a id='show-search' class="brand">Search</a>
+
+        <ul class="nav">
+              <li> 
+                <span id='genre-span'>
+                  <select id='genre' data-placeholder="Choose a genre" 
+                        class="chzn-select" style="width:220px;" tabindex="2">
+                    <option value=""></option> 
+                  </select>
+                </span>
+              </li>
+              <li> <button id="choose-random" class="btn btn-small btn-random">
+                        <i class="icon-random"></i></button>
+              </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<div id="all-info">
+    <div class="container">
+        <div  class="span12 ">
+            <div id="song-main">
+                <div id='song-list'> </div>
+                <br style="clear:left;"/>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+<br clear="both">
+<div id="the-footer" class="">
+  <div>
+    <small>
+    Powered by <a href="http://echonest.com">The Echo Nest</a> and <a href="http://spotify.com">Spotify</a>. 
+    </small>
+  </div>
+</div>
+
+
 </body>
 </html>
