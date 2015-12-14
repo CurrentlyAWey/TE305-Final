@@ -292,13 +292,22 @@ function processParams() {
         genre = getRandomFullGenre();
     }
     showGenre(genre);
+    var clean = "";
+    for (int i =0; i < genre.length; i++){
+	if (genre[i] != ' ')
+	    clean += genre[i];
+    }
+    
+    console.log(clean);
+
+    $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/linkinpark?count=1", function(response){
+	console.log(response);
+    });
+
 }
 
 $(document).ready(function(){
     console.log($(".chzn-single > span"));
-    $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/linkinpark?count=1", function(response){
-	console.log(response);
-    });
     $.ajaxSetup( {cache: true});
     $(".chzn-select").chosen();
     player = getSpotifyPlayer();
