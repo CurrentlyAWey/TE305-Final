@@ -305,13 +305,12 @@ function processParams() {
 	var url = response[0].images.standard_resolution.url;
 	console.log(url);
 	$("body").css({'background-image':'none'});
-	$("html").css({'background':'url('+url+') repeat-y center center fixed'});
 	$("html").css({
-		'background-repeat':'repeat-y',
-		'-webkit-background-size': 'cover',
-		'-moz-background-size': 'cover',
-		'-o-background-size': 'cover',
-		'background-size': 'cover'
+		'background':'url('+url+') repeat-y center center fixed',
+		'-webkit-background-size':'cover',
+		'-moz-background-size':'cover',
+		'-o-background-size':'cover',
+		'background-size':'cover'
 	});
 
     });
