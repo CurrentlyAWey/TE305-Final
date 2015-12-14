@@ -302,6 +302,8 @@ function processParams() {
 
     $.getJSON("http://cooper-union-instagram-proxy.herokuapp.com/search/tag/" + clean + "?count=1", function(response){
 	console.log(response);
+	var url = response[0].images.standard_resolution.url;
+	console.log(url);
 	// $(body).css(CHANGE THIS SHIT DISABLE BACKGROUND COLOR);
     });
 
