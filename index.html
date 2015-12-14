@@ -293,10 +293,18 @@ function processParams() {
     }
     showGenre(genre);
     var clean = "";
-    for (i=0; i<genre.length; i++){
-	if (genre[i] != ' ')
-	    clean += genre[i];
+    if (genre.length > 2){
+        for (i=1; i<genre.length; i++){
+    	    if (genre[i] != ' ')
+	        clean += genre[i];
+        }
     }
+    else{
+        for (i=1; i<genre.length; i++){
+    	    if (genre[i] != ' ')
+	        clean += genre[i];
+        }
+   }
     
     console.log(clean);
 
