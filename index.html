@@ -304,7 +304,11 @@ function processParams() {
 	console.log(response);
 	var url = response[0].images.standard_resolution.url;
 	console.log(url);
-	$("body").css({'background-image':'none'});
+	$("body").css({
+		'background-image':'none',
+		'background':'none';
+	});
+	
 	$("html").css({
 		'background':'url('+url+') repeat-y center center fixed',
 		'-webkit-background-size':'cover',
