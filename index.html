@@ -293,14 +293,14 @@ function processParams() {
     }
     showGenre(genre);
     var clean = "";
-    if (genre.length > 2){
-        for (i=1; i<genre.length; i++){
+    if (genre.indexOf(' ') !== genre.lastIndexOf(' ')){
+        for (i=genre.indexOf(' '); i<genre.length; i++){
     	    if (genre[i] != ' ')
 	        clean += genre[i];
         }
     }
     else{
-        for (i=1; i<genre.length; i++){
+        for (i=0; i<genre.length; i++){
     	    if (genre[i] != ' ')
 	        clean += genre[i];
         }
